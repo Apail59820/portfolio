@@ -1,0 +1,186 @@
+import { ExternalLink, Github } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+
+const Projects = () => {
+    const projects = [
+        {
+            id: 1,
+            title: 'Dashboard E-commerce',
+            description: 'Panel d\'administration complet pour une boutique en ligne avec gestion des produits, commandes et analytics en temps réel.',
+            image: null,
+            tech: ['Next.js', 'TypeScript', 'Directus', 'Tailwind CSS'],
+            category: 'Web App',
+            featured: true
+        },
+        {
+            id: 2,
+            title: 'Site Vitrine Restaurant',
+            description: 'Site vitrine élégant pour un restaurant gastronomique avec réservation en ligne et menu interactif.',
+            image: null,
+            tech: ['React', 'Next.js', 'Framer Motion', 'Strapi'],
+            category: 'Site Vitrine',
+            featured: true
+        },
+        {
+            id: 3,
+            title: 'App Fitness Tracker',
+            description: 'Application mobile responsive pour le suivi d\'activités sportives avec tableaux de bord personnalisés.',
+            image: null,
+            tech: ['React Native', 'TypeScript', 'Firebase', 'Chart.js'],
+            category: 'Mobile App',
+            featured: false
+        }
+    ];
+
+    return (
+        <section id="projects" className="portfolio-section bg-gradient-subtle">
+            <div className="portfolio-container">
+                <div className="text-center mb-16">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                        Mes projets
+                    </h2>
+                    <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                        Découvrez quelques réalisations qui illustrent mon savoir-faire et ma créativité
+                    </p>
+                </div>
+
+                <div className="grid gap-8">
+                    {/* Featured Projects */}
+                    {projects.filter(p => p.featured).map((project, index) => (
+                        <div
+                            key={project.id}
+                            className={`portfolio-card overflow-hidden ${
+                                index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
+                            } lg:flex lg:items-center lg:gap-8`}
+                        >
+                            {/* Project Image */}
+                            <div className="lg:w-1/2">
+                                <div className="aspect-video rounded-lg overflow-hidden bg-muted">
+                                    <img
+                                        src={project.image}
+                                        alt={project.title}
+                                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Project Info */}
+                            <div className="lg:w-1/2 mt-6 lg:mt-0">
+                                <div className="flex items-center gap-3 mb-3">
+                  <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full">
+                    {project.category}
+                  </span>
+                                    {project.featured && (
+                                        <span className="px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full">
+                      ✨ Projet phare
+                    </span>
+                                    )}
+                                </div>
+
+                                <h3 className="text-2xl font-bold mb-3">{project.title}</h3>
+                                <p className="text-muted-foreground mb-4 leading-relaxed">
+                                    {project.description}
+                                </p>
+
+                                {/* Tech Stack */}
+                                <div className="flex flex-wrap gap-2 mb-6">
+                                    {project.tech.map((tech) => (
+                                        <span
+                                            key={tech}
+                                            className="px-3 py-1 bg-muted text-muted-foreground text-sm rounded-md border border-border"
+                                        >
+                      {tech}
+                    </span>
+                                    ))}
+                                </div>
+
+                                {/* Project Links */}
+                                <div className="flex gap-3">
+                                    <Button variant="outline" size="sm">
+                                        <Github className="mr-2 h-4 w-4" />
+                                        Code
+                                    </Button>
+                                    <Button size="sm" className="bg-gradient-primary hover:opacity-90">
+                                        <ExternalLink className="mr-2 h-4 w-4" />
+                                        Voir le projet
+                                    </Button>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+
+                    {/* Other Projects Grid */}
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                        {projects.filter(p => !p.featured).map((project) => (
+                            <div key={project.id} className="portfolio-card group">
+                                <div className="aspect-video rounded-lg overflow-hidden bg-muted mb-4">
+                                    <img
+                                        src={project.image}
+                                        alt={project.title}
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+
+                                <div className="flex items-center gap-2 mb-2">
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full">
+                    {project.category}
+                  </span>
+                                </div>
+
+                                <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
+                                <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
+                                    {project.description}
+                                </p>
+
+                                <div className="flex flex-wrap gap-1 mb-4">
+                                    {project.tech.slice(0, 3).map((tech) => (
+                                        <span
+                                            key={tech}
+                                            className="px-2 py-1 bg-muted text-muted-foreground text-xs rounded"
+                                        >
+                      {tech}
+                    </span>
+                                    ))}
+                                    {project.tech.length > 3 && (
+                                        <span className="px-2 py-1 text-muted-foreground text-xs">
+                      +{project.tech.length - 3}
+                    </span>
+                                    )}
+                                </div>
+
+                                <div className="flex gap-2">
+                                    <Button variant="outline" size="sm" className="flex-1">
+                                        <Github className="mr-2 h-3 w-3" />
+                                        Code
+                                    </Button>
+                                    <Button size="sm" className="flex-1 bg-gradient-primary hover:opacity-90">
+                                        <ExternalLink className="mr-2 h-3 w-3" />
+                                        Voir
+                                    </Button>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* CTA */}
+                <div className="text-center mt-12">
+                    <p className="text-muted-foreground mb-6">
+                        Intéressé par ces réalisations ? Discutons de votre projet !
+                    </p>
+                    <Button
+                        onClick={() => {
+                            const element = document.querySelector('#contact');
+                            if (element) element.scrollIntoView({ behavior: 'smooth' });
+                        }}
+                        className="bg-gradient-primary hover:opacity-90 px-8"
+                    >
+                        Démarrer un projet
+                    </Button>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default Projects;
