@@ -45,7 +45,6 @@ const Projects = () => {
                 </div>
 
                 <div className="grid gap-8">
-                    {/* Featured Projects */}
                     {projects.filter(p => p.featured).map((project, index) => (
                         <div
                             key={project.id}
@@ -53,7 +52,6 @@ const Projects = () => {
                                 index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
                             } lg:flex lg:items-center lg:gap-8`}
                         >
-                            {/* Project Image */}
                             <div className="lg:w-1/2">
                                 <div className="aspect-video rounded-lg overflow-hidden bg-muted">
                                     <img
@@ -64,7 +62,6 @@ const Projects = () => {
                                 </div>
                             </div>
 
-                            {/* Project Info */}
                             <div className="lg:w-1/2 mt-6 lg:mt-0">
                                 <div className="flex items-center gap-3 mb-3">
                   <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full">
@@ -82,7 +79,6 @@ const Projects = () => {
                                     {project.description}
                                 </p>
 
-                                {/* Tech Stack */}
                                 <div className="flex flex-wrap gap-2 mb-6">
                                     {project.tech.map((tech) => (
                                         <span
@@ -94,7 +90,6 @@ const Projects = () => {
                                     ))}
                                 </div>
 
-                                {/* Project Links */}
                                 <div className="flex gap-3">
                                     <Button variant="outline" size="sm">
                                         <Github className="mr-2 h-4 w-4" />
@@ -109,7 +104,6 @@ const Projects = () => {
                         </div>
                     ))}
 
-                    {/* Other Projects Grid */}
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
                         {projects.filter(p => !p.featured).map((project) => (
                             <div key={project.id} className="portfolio-card group">
@@ -163,7 +157,6 @@ const Projects = () => {
                     </div>
                 </div>
 
-                {/* CTA */}
                 <div className="text-center mt-12">
                     <p className="text-muted-foreground mb-6">
                         Intéressé par ces réalisations ? Discutons de votre projet !

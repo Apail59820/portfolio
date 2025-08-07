@@ -27,7 +27,6 @@ const Contact = () => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Simulate form submission
         setTimeout(() => {
             toast({
                 title: "Message envoyé !",
@@ -93,7 +92,6 @@ const Contact = () => {
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-12">
-                    {/* Contact Info */}
                     <div className="space-y-8">
                         <div>
                             <h3 className="text-2xl font-semibold mb-6">Restons en contact</h3>
@@ -103,7 +101,6 @@ const Contact = () => {
                             </p>
                         </div>
 
-                        {/* Contact Methods */}
                         <div className="space-y-4">
                             {contactInfo.map((info) => (
                                 <div key={info.label} className="flex items-center gap-4">
@@ -127,7 +124,6 @@ const Contact = () => {
                             ))}
                         </div>
 
-                        {/* Social Links */}
                         <div className="pt-6">
                             <h4 className="font-medium mb-4">Retrouvez-moi aussi sur</h4>
                             <div className="flex gap-4">
@@ -146,7 +142,6 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        {/* Availability Status */}
                         <div className="bg-gradient-accent rounded-xl p-6 text-white">
                             <div className="flex items-center gap-3 mb-2">
                                 <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
@@ -158,7 +153,6 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    {/* Contact Form */}
                     <div className="portfolio-card">
                         <h3 className="text-xl font-semibold mb-6">Envoyez-moi un message</h3>
 

@@ -24,12 +24,10 @@ const Header = () => {
         <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
             <div className="portfolio-container">
                 <div className="flex items-center justify-between h-16">
-                    {/* Logo */}
                     <div className="font-semibold text-xl portfolio-gradient-text">
                         Amaury Paillart
                     </div>
 
-                    {/* Desktop Navigation */}
                     <nav className="hidden md:flex items-center space-x-8">
                         {navItems.map((item) => (
                             <button
@@ -42,7 +40,6 @@ const Header = () => {
                         ))}
                     </nav>
 
-                    {/* Mobile Menu Button */}
                     <Button
                         variant="ghost"
                         size="icon"
@@ -53,7 +50,6 @@ const Header = () => {
                     </Button>
                 </div>
 
-                {/* Mobile Navigation */}
                 {isMenuOpen && (
                     <nav className="md:hidden pb-4">
                         <div className="flex flex-col space-y-3">

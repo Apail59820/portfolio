@@ -14,7 +14,6 @@ const About = () => {
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
-                    {/* Story */}
                     <div className="space-y-6">
                         <div className="flex items-center gap-3 mb-6">
                             <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center">
@@ -36,9 +35,7 @@ const About = () => {
                         </p>
                     </div>
 
-                    {/* Stats & Info */}
                     <div className="space-y-6">
-                        {/* Experience Card */}
                         <div className="portfolio-card">
                             <div className="flex items-center gap-4 mb-4">
                                 <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center">
@@ -54,7 +51,6 @@ const About = () => {
                             </p>
                         </div>
 
-                        {/* Education Card */}
                         <div className="portfolio-card">
                             <div className="flex items-center gap-4 mb-4">
                                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
@@ -71,7 +67,6 @@ const About = () => {
                             </ul>
                         </div>
 
-                        {/* Philosophy */}
                         <div className="bg-gradient-primary rounded-xl p-6 text-white">
                             <h4 className="font-semibold text-lg mb-3">Ma philosophie</h4>
                             <p className="text-white/90 text-sm leading-relaxed">

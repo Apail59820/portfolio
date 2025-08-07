@@ -103,7 +103,6 @@ const Skills = () => {
                     })}
                 </div>
 
-                {/* Additional Skills */}
                 <div className="mt-16 text-center">
                     <h3 className="text-xl font-semibold mb-6">Autres compétences</h3>
                     <div className="flex flex-wrap justify-center gap-3">

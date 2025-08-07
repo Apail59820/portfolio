@@ -18,12 +18,10 @@ const Hero = () => {
 
     return (
         <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-            {/* Background gradient glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 portfolio-hero-glow rounded-full animate-glow-pulse"></div>
 
             <div className="portfolio-container relative z-10">
                 <div className="text-center fade-in-up">
-                    {/* Profile Image */}
                     <div className="relative inline-block mb-8">
                         <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-primary/20 shadow-glow">
                             <img
@@ -34,7 +32,6 @@ const Hero = () => {
                         </div>
                     </div>
 
-                    {/* Main heading */}
                     <h1 className="text-4xl md:text-6xl font-bold mb-6 fade-in-up-delay">
                         Salut, je suis{' '}
                         <span className="portfolio-gradient-text">
@@ -42,18 +39,15 @@ const Hero = () => {
             </span>
                     </h1>
 
-                    {/* Subtitle */}
                     <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto fade-in-up-delay">
                         Développeur web freelance passionné par la création d'expériences numériques modernes et performantes
                     </p>
 
-                    {/* Status badge */}
                     <div className="inline-flex items-center px-4 py-2 bg-accent/10 border border-accent/20 rounded-full text-accent font-medium mb-8 fade-in-up-delay-2">
                         <div className="w-2 h-2 bg-accent rounded-full mr-2 animate-pulse"></div>
                         Disponible pour de nouveaux projets
                     </div>
 
-                    {/* CTA Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 fade-in-up-delay-2">
                         <Button
                             onClick={scrollToContact}
@@ -71,7 +65,6 @@ const Hero = () => {
                         </Button>
                     </div>
 
-                    {/* Social Links */}
                     <div className="flex justify-center gap-6 fade-in-up-delay-2">
                         <a
                             href="https://github.com"
@@ -92,7 +85,6 @@ const Hero = () => {
                     </div>
                 </div>
 
-                {/* Scroll indicator */}
                 <div className="absolute bottom-8 left-1/2 -translate-x-1/2 fade-in-up-delay-2">
                     <button
                         onClick={scrollToAbout}
