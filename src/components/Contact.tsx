@@ -172,12 +172,17 @@ const Contact = () => {
                 {socialLinks.map((social) => (
                   <motion.a
                     key={social.label}
-                    href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1 }}
                     className={`w-12 h-12 bg-muted rounded-xl flex items-center justify-center text-muted-foreground transition-all duration-200 ${social.color}`}
                     title={social.label}
+                    onClick={() => {
+                      toast({
+                        title: "Erreur !",
+                        description: "Désolé, ce lien n'est pas disponible pour le moment. Ca arrive bientôt, promis !",
+                      });
+                    }}
                   >
                     {social.icon}
                   </motion.a>

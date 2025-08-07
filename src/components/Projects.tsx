@@ -37,31 +37,58 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Dashboard E-commerce',
-      description: "Panel d'administration complet pour une boutique en ligne avec gestion des produits, commandes et analytics en temps réel.",
-      image: null,
-      tech: ['Next.js', 'TypeScript', 'Directus', 'Tailwind CSS'],
+      title: 'Diag 2.0',
+      description: "Un logiciel de gestion d'états des lieux permettant de créer des typologies personnalisées pour instancier et diagnostiquer rapidement des milliers de logements sans saisie manuelle.",
+      image: '/diag2-preview.png',
+      tech: ['React', 'TypeScript', 'Node.JS', 'Material UI', 'Framer Motion', 'Redux', 'Chart.JS'],
       category: 'Web App',
       featured: true
     },
     {
       id: 2,
-      title: 'Site Vitrine Restaurant',
-      description: 'Site vitrine élégant pour un restaurant gastronomique avec réservation en ligne et menu interactif.',
-      image: null,
-      tech: ['React', 'Next.js', 'Framer Motion', 'Strapi'],
-      category: 'Site Vitrine',
+      title: 'Projex CRM',
+      description: 'Un outil collaboratif de suivi commercial transformant une newsletter hebdomadaire en mini CRM, pour centraliser, qualifier et exploiter les retours terrain des équipes.' ,
+      image: '/projex-crm-preview.png',
+      tech: ['Next.JS', 'TypeScript', 'Tailwinds', 'Strapi', 'Framer Motion', 'React Query'],
+      category: 'Web App',
       featured: true
     },
     {
       id: 3,
-      title: 'App Fitness Tracker',
-      description: "Application mobile responsive pour le suivi d'activités sportives avec tableaux de bord personnalisés.",
-      image: null,
-      tech: ['React Native', 'TypeScript', 'Firebase', 'Chart.js'],
-      category: 'Mobile App',
+      title: 'Maïa',
+      description: "Une plateforme de gestion client tout-en-un pour bureaux d’études, intégrant suivi de projet, facturation, relances et communication centralisée.",
+      image: '/maia-preview.png',
+      tech: ['Next.JS', 'Directus', 'Ant Design'],
+      category: 'Web App',
       featured: false
-    }
+    },
+    {
+      id: 4,
+      title: 'Gritty Gears',
+      description: "Site web de e-commerce sur le thème de la moto. Projet réalisé dans le cadre des études.",
+      image: '/gritty-gears-preview.png',
+      tech: ['React', 'TypeScript', 'React Native', 'Firebase'],
+      category: 'E-Commerce',
+      featured: false
+    },
+    {
+      id: 5,
+      title: 'Soxup',
+      description: "Site web de e-commerce réalisé pour une marque de chaussettes au design décalé.",
+      image: '/soxup-preview.png',
+      tech: ['Next.JS', 'TypeScript', 'Stripe', 'Medusa.JS'],
+      category: 'E-Commerce',
+      featured: false
+    },
+    {
+      id: 5,
+      title: 'IHM Solac',
+      description: "IHM déployée sur les ponts roulants du site d'ArcelorMittal Mardyck. Affiche l'état des élements du pont roulant, et ses défauts.",
+      image: '/ihm-preview.png',
+      tech: ['LAD', 'FBD', 'Magelis', 'Control Expert', 'VijeoDesigner', 'C++'],
+      category: 'IHM',
+      featured: false
+    },
   ];
 
   return (
@@ -163,7 +190,7 @@ const Projects = () => {
                 variants={fadeInUp}
                 custom={i}
               >
-                <div className="aspect-video rounded-lg overflow-hidden bg-muted mb-4">
+                <div className="aspect-video rounded-lg overflow-hidden bg-muted mb-4 transition-shadow duration-300 group-hover:shadow-lg">
                   <img
                     src={project.image}
                     alt={project.title}

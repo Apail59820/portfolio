@@ -186,6 +186,9 @@ const Skills = () => {
               "APIs externes",
               "Déploiement",
               "Optimisation",
+              "C++",
+              "C# .Net",
+              "Go"
             ].map((skill) => (
               <motion.span
                 key={skill}

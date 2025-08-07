@@ -55,8 +55,8 @@ const About = () => {
             </div>
 
             {[
-              "À 24 ans, je suis un développeur web freelance passionné par la création d'expériences numériques qui ont du sens. Mon parcours a commencé il y a quelques années avec une curiosité insatiable pour le web et ses possibilités infinies.",
-              "Mes 2 années d'expérience en alternance m'ont permis de travailler sur des projets variés : des panels d'administration complexes aux sites vitrines élégants, en passant par des applications sur mesure. Chaque projet est une nouvelle aventure où je peux allier créativité et technicité.",
+              "À 24 ans, je suis un développeur web freelance passionné par la création d'expériences numériques qui ont du sens. Mon parcours a commencé il y a une dizaine d'années avec une curiosité insatiable pour la programmation et ses possibilités infinies.",
+              "Mes 2 années d'expérience m'ont permis de travailler sur des projets variés : des panels d'administration, sites vitrines élégants, en passant par des applications et scripts sur mesure. Chaque projet est une nouvelle aventure où je peux allier créativité et technicité.",
               "Ce qui me motive ? Transformer vos idées en solutions digitales performantes, accessibles et esthétiques. Je crois fermement qu'un bon code doit être à la fois élégant techniquement et accessible humainement.",
             ].map((paragraph, i) => (
               <motion.p
@@ -88,11 +88,12 @@ const About = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg">Expérience</h4>
-                  <p className="text-muted-foreground">2 ans en alternance</p>
+                  <p className="text-muted-foreground">2 ans</p>
                 </div>
               </div>
               <p className="text-sm text-muted-foreground">
-                Développement d'applications web complètes, de la conception à la mise en production
+                Développement d'applications web complètes, de la conception à la mise en production,
+                tous effectués en interne pour un bureau d'études.
               </p>
             </motion.div>
 
@@ -109,12 +110,13 @@ const About = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg">Formation</h4>
-                  <p className="text-muted-foreground">Master & Bachelor</p>
+                  <p className="text-muted-foreground">Master, Bachelor & BTS</p>
                 </div>
               </div>
               <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• Master Expert Développeur Web</li>
-                <li>• Bachelor Concepteur Développeur d'Applications</li>
+                <li>• Master Expert Développeur Web @ Nexa digital School</li>
+                <li>• Bachelor Concepteur Développeur d'Applications @ Doranco</li>
+                <li>• BTS Systèmes numériques option informatique & réseaux @ Lycée de l'Europe</li>
               </ul>
             </motion.div>
 
