@@ -1,0 +1,15 @@
+{
+  "name": "Amaury Paillart - Développeur Web Freelance",
+  "short_name": "Amaury Paillart",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/amaury.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

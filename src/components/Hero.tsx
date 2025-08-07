@@ -92,6 +92,7 @@ const Hero = () => {
                 src={"/amaury.png"}
                 alt="Amaury Paillart"
                 className="w-full h-full object-cover"
+                loading="eager"
               />
             </div>
           </div>
