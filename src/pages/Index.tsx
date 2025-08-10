@@ -16,7 +16,7 @@ const Index = () => {
                     name="description"
                     content="Développeur web freelance spécialisé en Next.js, React et TypeScript. 2 ans d'expérience, création de sites vitrines, applications web et panels d'administration."
                 />
-                <link rel="canonical" href="https://amaury.dev/" />
+                <link rel="canonical" href="https://apaillart.portfolio.com/" />
             </Helmet>
             <div className="min-h-screen bg-background">
                 <Header />
