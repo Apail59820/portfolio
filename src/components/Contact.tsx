@@ -58,14 +58,14 @@ const Contact = () => {
     {
       icon: <Mail className="h-5 w-5" />,
       label: "Email",
-      value: "amaury.paillart@example.com",
-      href: "mailto:amaury.paillart@example.com",
+      value: "amaury.paillart59820@gmail.com",
+      href: "mailto:amaury.paillart59820@gmail.com",
     },
     {
       icon: <Phone className="h-5 w-5" />,
       label: "Téléphone",
-      value: "+33 6 12 34 56 78",
-      href: "tel:+33612345678",
+      value: "+33 6 05 25 57 74",
+      href: "tel:+33605255774",
     },
     {
       icon: <MapPin className="h-5 w-5" />,
